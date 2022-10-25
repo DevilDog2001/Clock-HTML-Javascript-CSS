@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div class="content">
+            <input type="text" id="input" placeholder="0" readonly>
+            <div class="row1">
+                <button class = "nums" onclick="num(this);">7</button>
+                <button class = "nums" onclick="num(this);">8</button>
+                <button class = "nums" onclick="num(this);">9</button>
+                <button class="operator" onclick="num(this);">÷</button>
+            </div>
+            <div class="row2">
+                <button class = "nums" onclick="num(this);">4</button>
+                <button class = "nums" onclick="num(this);">5</button>
+                <button class = "nums" onclick="num(this);">6</button>
+                <button class="operator" onclick="num(this);">x</button>
+            </div>
+            <div class="row3">
+                <button class = "nums" onclick="num(this)">1</button>
+                <button class = "nums" onclick="num(this)">2</button>
+                <button class = "nums" onclick="num(this)">3</button>
+                <button class="operator" onclick="num(this);">-</button>
+            </div>
+            <div class="row4">
+                <button class = "nums" onclick="clr();">C</button>
+                <button class = "nums" onclick="num(this);">0</button>
+                <button class = "nums" onclick="num(this);">.</button>
+                <button class="operator" onclick="num(this);">+</button>
+            </div>
+            <div class="row5">
+                <button id="equals" onclick="calculate()">=</button>   
+            </div>
+        </div>
+    </div>
+    <script src="./Calculator.js"></script>
+</body>
+</html>
